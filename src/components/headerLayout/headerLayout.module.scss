@@ -1,0 +1,95 @@
+.header {
+    width: 100wh;
+    height: 130px;
+    background: linear-gradient(to bottom,#25211e 0,rgba(37,33,30,0) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .icon_menu {
+        position: absolute;
+        left: 60px;
+    }
+
+    h1 {
+        color: #f0f8ff;
+        font-size: 50px;
+        text-align: center;
+        font-family: 'Frank Ruhl Libre', serif;
+        font-weight: 100;
+        color: #e5e5e5;
+    }
+
+    &:hover {
+        transition: all .2s ease-out;
+        background: rgba(0,0,0,0.9);
+    }
+}
+
+.menu_wrapper {
+    margin-bottom: 120px;
+    background-color: #fdfdfd;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(-150%);
+    animation: ani 2s forwards;
+}
+
+@keyframes ani {
+    0% {transform: translateX(-150%);}
+    100% {transform: translateY(0);}
+}
+
+.empty {
+    height: 65px;
+    margin-bottom: 120px;
+}
+
+.category {
+    margin: 0;
+    font-size: 29px;
+    font-weight: 100;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.category_active {
+    text-decoration: underline;
+}
+
+.home_link {
+    margin-bottom: -65px;
+    background-color: #fdfdfd;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .link {
+        text-decoration: none;
+        color: black;
+        font-size: 29px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+@media (max-width: 770px) {
+    .icon_menu {
+        transform: translate(-50px, 0px);
+    }
+
+    .header {
+        h1 {
+            max-width: 330px;
+            font-size: 40px;
+        }
+    }
+}

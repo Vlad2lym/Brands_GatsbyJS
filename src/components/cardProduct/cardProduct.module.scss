@@ -1,0 +1,40 @@
+.container {
+    width: 300px;
+    height: 400px;
+    padding: 20px 10px 20px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.8s ease 0s;
+
+    &:hover {
+        transform: scale(1.1);
+        }
+
+    h3 {
+        flex: 1 1 auto;
+        -webkit-line-clamp: 4;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    h2 {
+        margin: 0;
+    }
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 770px) {
+    .container {
+        h3 {
+            text-align: center;
+        }
+    }
+}

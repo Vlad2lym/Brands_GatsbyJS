@@ -1,0 +1,29 @@
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+
+    h2 {
+        font-weight: 100;
+    }
+}
+
+.title {
+    font-weight: 100;
+}
+
+@media (max-width: 770px) {
+    .image {
+        height: 300px;
+    }
+
+    .description {
+        max-width: 350px;
+    }
+}
